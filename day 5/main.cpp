@@ -73,7 +73,7 @@ void part1()
         bool line_ok = true;
 
         for (auto i = 1; i < line.size(); ++i) {
-            for (auto k = 1; k < i; ++k) {
+            for (auto k = 0; k < i; ++k) {
                 if (map[line[i]][line[k]]) {
                     line_ok = false;
                     break;
@@ -106,7 +106,7 @@ void part2()
         bool line_ok = true;
 
         for (auto i = 1; i < line.size(); ++i) {
-            for (auto k = 1; k < i; ++k) {
+            for (auto k = 0; k < i; ++k) {
                 if (map[line[i]][line[k]]) {
                     line_ok = false;
                     break;
